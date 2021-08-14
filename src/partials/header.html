@@ -5,28 +5,42 @@
             <nav class="header__nav">
                 <a class="logo header__logo link" href="./index.html">
                     <picture>
-                        <source srcset="" media="(min-width: 1444px)" />
-                        <source srcset="" media="(min-width: 768px)" />
-                        <source srcset="" media="(max-width: 320px)" />
-                        <img class="team-cards__img" src="" alt="Логотип компанії 3Д-Фрідом" />
+                        <source
+                            srcset="./images/desktop/logo-desktop/desktop-logo-min.png 1x, ./images/desktop/logo-desktop/desktop-logo@2x-min.png 2x"
+                            media="(min-width: 1440px)" />
+                        <source
+                            srcset="./images/tablet/logo-tablet/tablet-logo-min.png 1x, ./images/tablet/logo-tablet/tablet-logo@2x-min.png 2x"
+                            media="(min-width: 768px)" />
+                        <source
+                            srcset="./images/mobile/logo-mobile/mobil-logo-min.png 1x, ./images/mobile/logo-mobile/mobil-logo@2x-min.png 2x"
+                            media="(max-width: 320px)" />
+                        <img class="team-cards__img" src="./images/mobile/logo-mobile/mobil-logo-min.png"
+                            alt="Логотип компанії 3Д-Фрідом" />
                     </picture>
                 </a>
                 <ul class="header-menu list">
-                    <li class="header-menu__item header-menu__current"><a class="header-menu__link link"
-                            href="">ГОЛОВНА</a></li>
+                    <li class="header-menu__item header-menu__current">
+                        <a class="header-menu__link link" href="./index.html">ГОЛОВНА</a>
+                    </li>
                     <li class="header-menu__item">ПОСЛУГИ
                         <ul class="header-submenu">
-                            <li class="header-submenu__item"><a class="header-submenu__link" href="">3D Моделювання
-                            </li></a>
-                            <li class=" header-submenu__item"><a class="header-submenu__link" href="">3D Сканування
-                            </li></a>
-                            <li class=" header-submenu__item"><a class="header-submenu__link" href="">3D Друк</li>
-                            </a>
+                            <li class="header-submenu__item">
+                                <a class="header-submenu__link link" href="./modeling.html">3D Моделювання</a>
+                            </li>
+                            <li class=" header-submenu__item">
+                                <a class="header-submenu__link link" href="./scanning.html">3D Сканування</a>
+                            </li>
+                            <li class=" header-submenu__item">
+                                <a class="header-submenu__link link" href="./printing.html">3D Друк</a>
+                            </li>
                         </ul>
                     </li>
-                    <li class="header-menu__item"><a class="header-menu__link link" href="">ЗАМОВИТИ</a></li>
-                    <li class="header-menu__item"><a class="header-menu__link link" href="">КОНТАКТИ</a></li>
-                </ul>
+                    <li class="header-menu__item">
+                        <a class="header-menu__link link" href="./take-order.html">ЗАМОВИТИ</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="header-menu__link link" href="./contacts.html">КОНТАКТИ</a>
+                    </li>
                 </ul>
 
                 <ul class="lang list">
@@ -39,13 +53,12 @@
                 <ul class="header-tel list">
                     <li class="header-tel__item"><a class="header-tel-link link" href="+380936432288">
                             <svg class="header__icon" width="10" height="16">
-                                <use href=""></use>
-                            </svg>
-                            +38 (093) 643 22 88</a>
+                                <use href="./images/sprite.svg#mobil-phone"></use>
+                            </svg>+38 (093) 643 22 88</a>
                     </li>
                     <li class="header-tel__item"><a class="header-tel-link link" href="+380503454423">
                             <svg class="header__icon" width="10" height="16">
-                                <use href=""></use>
+                                <use href="./images/sprite.svg#mobil-phone"></use>
                             </svg>+38 (050) 345 44 23</a>
                     </li>
                 </ul>
