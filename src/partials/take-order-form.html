@@ -1,0 +1,74 @@
+<section class="section">
+  <h2 class="take-order__subtittle">зворотній зв'язок</h2>
+  <form class="order-form" name="order-form">
+    <strong class="order-form__title">ЗВ’ЯЖІТЬСЯ З НАМИ </strong>
+    <div class="order-form__input--wrap">
+      <input name="order-name" type="text" required minlength="2" placeholder="Ім’я" />
+    </div>
+    <div class="order-form__input--wrap">
+      <input name="order-mail" type="email" required minlength="2" placeholder="Email" />
+    </div>
+
+    <div class="select-box">
+      <div class="options-container">
+        <div class="option">
+          <input type="radio" class="radio" id="300" name="300" />
+          <label for="300">300 мікрон</label>
+        </div>
+        <div class="option">
+          <input type="radio" class="radio" id="200" name="200" />
+          <label for="200">200 мікрон</label>
+        </div>
+        <div class="option">
+          <input type="radio" class="radio" id="100" name="100" />
+          <label for="100">100 мікрон</label>
+        </div>
+        <div class="option">
+          <input type="radio" class="radio" id="support" name="support" />
+          <label for="support">Труднощі у виборі - ми допоможемо</label>
+        </div>
+      </div>
+      <p class="selected select-form__subtitle">Види пластика</p>
+    </div>
+
+    <div class="form-input">
+      <label for="comment">Повідомлення</label>
+      <textarea name="comment" id="comment" placeholder="Залишіть своє повідомлення"></textarea>
+    </div>
+    <div class="form-input">
+      <input type="file" id="file" />
+      <label for="file">*Прикріпіть зображення/креслення/STL/Obj/CAD-модель</label>
+    </div>
+    <button type="submit">ВІДПРАВИТИ</button>
+  </form>
+</section>
+
+<section class="section">
+  <h2 class="take-order__subtittle">контакти</h2>
+  <div class="contacts-tel">
+    <b class="contacts-tel__caption caption">ТЕЛЕФОНИ</b>
+    <ul class="contacts-tel__list">
+      <li class="contacts-tel__item">
+        <a href="tel:+380957384551" class="contacts-tel__link">+38 (095) -73-84-551</a>
+      </li>
+      <li class="contacts-tel__item">
+        <a href="tel:+380980025235" class="contacts-tel__link">+38 (098) -00-25-235</a>
+      </li>
+    </ul>
+  </div>
+  <div class="contacts-mail">
+    <b class="contacts-mail__caption caption">Email</b>
+    <a class="contacts-mail__link" href="mailto:3dfreedom.info@gmail.com"
+      >3dfreedom.info@gmail.com</a
+    >
+  </div>
+  <div class="contacts-time">
+    <b class="contacts-time__caption caption">Робочий час</b>
+    <ul class="contacts-time__list">
+      <li class="contacts-time__item">Пн-пт: з 8:00 до 19:00</li>
+      <li class="contacts-time__item">Сб, Нд: з 10:00 до 17:00</li>
+    </ul>
+  </div>
+  <div class="photo-puzzle"></div>
+</section>
+<script src="./js/options.js"></script>
