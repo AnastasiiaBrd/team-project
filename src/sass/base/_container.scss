@@ -1,0 +1,20 @@
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
+  @media screen and (min-width: 768px) {
+    width: 648px;
+  }
+  @media screen and (min-width: 1444px) {
+    width: 1062px;
+  }
+}
+
+.container-header {
+  @media screen and (min-width: 1444px) {
+    width: 1280px;
+    outline: 1px solid teal;
+  }
+}
