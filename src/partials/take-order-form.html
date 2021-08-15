@@ -7,47 +7,53 @@
       <label for="order-name" class="order-form__label">Ім’я</label>
     </div>
     <div class="order-form__input order-form__input--wrap">
-      <input name="order-mail" id="order-mail" type="email" required minlength="2" placeholder=" " />
+      <input
+        name="order-mail"
+        id="order-mail"
+        type="email"
+        required
+        minlength="2"
+        placeholder=" "
+      />
       <label for="order-mail" class="order-form__label">Email</label>
     </div>
 
-    <div class="select-box order-form__input">
-      <ul class="options-container1">
-        <li class="option1">
+    <div class="select-box">
+      <ul class="options-container1 select-box__list">
+        <li class="option1 select-box__item">
           <input type="radio" class="radio" id="300" name="plastic" value="300" />
           <label for="300">300 мікрон</label>
         </li>
-        <li class="option1">
+        <li class="option1 select-box__item">
           <input type="radio" class="radio" id="200" name="plastic" value="200" />
           <label for="200">200 мікрон</label>
         </li>
-        <li class="option1">
+        <li class="option1 select-box__item">
           <input type="radio" class="radio" id="100" name="plastic" value="100" />
           <label for="100">100 мікрон</label>
         </li>
-        <li class="option1">
+        <li class="option1 select-box__item">
           <input type="radio" class="radio" id="support" name="plastic" value="support" />
           <label for="support">Труднощі у виборі - ми допоможемо</label>
         </li>
       </ul>
       <p class="selected1 select-form__subtitle">Види пластика</p>
     </div>
-
-    <div class="select-box order-form__input">
-      <ul class="options-container2">
-        <li class="option2">
+    <div class="select-box">
+      <ul class="options-container2 select-box__list">
+        <li class="option2 select-box__item">
           <input type="radio" class="radio" id="400" name="quality" value="300" />
           <label for="400">300 мікрон</label>
         </li>
-        <li class="option2">
+        <li class="option2 select-box__item">
           <input type="radio" class="radio" id="500" name="quality" value="200" />
           <label for="500">200 мікрон</label>
         </li>
-        <li class="option2">
+        <li class="option2 select-box__item">
           <input type="radio" class="radio" id="600" name="quality" value="100" />
           <label for="600">100 мікрон</label>
         </li>
-        <li class="option2">
+        <li class="option2 select-box__item">
           <input type="radio" class="radio" id="suppor" name="quality" value="support" />
           <label for="suppor">Труднощі у виборі - ми допоможемо</label>
         </li>
@@ -55,21 +61,22 @@
       <p class="selected2 select-form__subtitle">Якість друку</p>
     </div>
 
-    <div class="select-box order-form__input">
-      <ul class="options-container3">
-        <li class="option3">
+    <div class="select-box">
+      <ul class="options-container3 select-box__list">
+        <li class="option3 select-box__item">
+
           <input type="radio" class="radio" id="700" name="color" value="300" />
           <label for="700">300 мікрон</label>
         </li>
-        <li class="option3">
+        <li class="option3 select-box__item">
           <input type="radio" class="radio" id="800" name="color" value="200" />
           <label for="800">200 мікрон</label>
         </li>
-        <li class="option3">
+        <li class="option3 select-box__item">
           <input type="radio" class="radio" id="900" name="color" value="100" />
           <label for="900">100 мікрон</label>
         </li>
-        <li class="option3">
+        <li class="option3 select-box__item">
           <input type="radio" class="radio" id="suppo" name="color" value="support" />
           <label for="suppo">Труднощі у виборі - ми допоможемо</label>
         </li>
@@ -77,15 +84,19 @@
       <p class="selected3 select-form__subtitle">Колір</p>
     </div>
 
-    <div class="form-input">
-      <label for="comment">Повідомлення</label>
-      <textarea name="comment" id="comment" placeholder="Залишіть своє повідомлення"></textarea>
+    <div class="area-box">
+      <div class="area-wrap">
+        <label for="comment">Повідомлення</label>
+        <div class="area-text__leaf">
+        <textarea class="area-wrap__text" name="comment" id="comment" placeholder="Залишіть своє повідомлення"></textarea>
+        </div>
+      </div>
+      <div class="file-input">
+        <input type="file" id="file" class="file-input__icon visually-hidden"/>
+        <label for="file" >*Прикріпіть зображення/креслення/STL/Obj/CAD-модель</label>
+      </div>
     </div>
-    <div class="form-input">
-      <input type="file" id="file" />
-      <label for="file">*Прикріпіть зображення/креслення/STL/Obj/CAD-модель</label>
-    </div>
-    <button type="submit">ВІДПРАВИТИ</button>
+    <button class="button" type="submit">ВІДПРАВИТИ</button>
   </form>
 </section>
 
@@ -114,14 +125,18 @@
         </p>
       </li>
       <li class="contacts-time__item">
-        <p class="contacts-time__text">Сб, Нд: з 10:00 до 17:00
-        </p>
+        <p class="contacts-time__text">Сб, Нд: з 10:00 до 17:00</p>
       </li>
     </ul>
   </div>
   <div class="photo-puzzle">
     <picture>
-      <source srcset="./images/desktop/take-order/puzzle.png 1x, ./images/desktop/take-order/puzzle@2x.png 2x" />
+      <source
+        srcset="
+          ./images/desktop/take-order/puzzle.png    1x,
+          ./images/desktop/take-order/puzzle@2x.png 2x
+        "
+      />
       <img src="#" alt="сайты для ПК" />
     </picture>
   </div>
