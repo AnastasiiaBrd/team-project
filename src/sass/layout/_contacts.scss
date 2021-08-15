@@ -13,6 +13,17 @@
         line-height: 1.25;
 
         color: var(--accent-color);
+
+        @media screen and (min-width:768px) {
+            margin-bottom: 24px;
+            font-size: 36px;
+            line-height: 45px;            
+        }
+    }
+    &__content {
+        @media screen and (min-width:768px) {
+            display: flex;
+        }
     }
 
     &__video {
@@ -23,6 +34,14 @@
         height: 171px;
         margin-bottom: 16px;
         border-radius: 15px;
+
+        @media screen and (min-width:768px) {
+            width: 247px;
+            height: 192px;
+
+            margin-right: 20px;
+
+        }
     }
 
     // &__preview {
@@ -53,6 +72,12 @@
     content: "";
     background-image: url(../images/mobile/contact/emoji-min.png);
     background-size: cover;
+
+    @media screen and (min-width:768px) {
+        margin-left: 18px;
+    }
+
+    
 }
 
 .contact-field {
@@ -128,8 +153,18 @@
         }
     }
 
-    &__form-message-container {
+    &__message-container {
         position: relative;
+    }
+
+    &__figure {
+        margin-top: 4px;
+        width: 100%;
+
+        height: 200px;
+        border: 1px solid var(--accent-color);
+        border-radius: 50px 0px;
+
     }
 
     &__form-message-field {
@@ -140,52 +175,42 @@
     }
 
     &__form-message {
-        width: 100%;
-        height: 200px;
+        margin-top: 22px;
+        margin-left: 20px;
+        width: 90%;
+        height: 60%;
         resize: none;
+        border: none;
+    }
 
+    &__file-input {
+        display: block;
         margin-top: 4px;
-
-        outline: none;
-        border: 1px solid var(--accent-color);
-        border-radius: 50px 0px;
-
-        &::placeholder {
-            position: absolute;
-            left: 20px;
-            top: 22px;
-        }
-    }
-    &__form-clip {
-        position: absolute;
-        right: 22px;
-        bottom: 24px;
-    }
-
-    &__form-clip-icon {
-
-        width: 22px;
-        height: 20px;
-        fill: #CDCDCD;
-    }
-
-
-
-
-
-
-
-
-    &__form-note {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
         color: #CDCDCD;
 
         max-width: 228px;
-
         margin-bottom: 24px;
     }
+
+    &__file-input label::before {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 156px;
+
+        width: 22px;
+        height: 20px;
+        fill: #CDCDCD;
+        background-image: url(../images/clip.svg);
+        cursor: pointer;
+    }
+
+
+
 
     &__form-button {
         align-self: center;

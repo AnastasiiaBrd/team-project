@@ -78,24 +78,26 @@
                         required
                     />
                 </label>
-                <div class="contact-field__form-message-container">
-                    <label class="contact-field__form-message-field">
-                        Повідомлення
+
+                <label class="contact-field__form-message-field" id="user-message">
+                    Повідомлення
+                </label>
+                <div class="contact-field__message-container">
+                    <div class="contact-field__figure">
                         <textarea
                         name="user-message"
                         class="contact-field__form-message"
                         placeholder="Залишіть своє повідомлення"
                         ></textarea>
-                    </label>
-                    <div class="contact-field__form-clip">
-                        <svg class="contact-field__form-clip-icon">
-                            <use href="./images/sprite.svg#clip"></use>
-                        </svg>
+                    </div>
+                    <div class="contact-field__file-input">
+                        <input type="file" id="file" class="visually-hidden"/>
+                        <label for="file">*Прикріпіть зображення/креслення/STL/Obj/CAD-модель</label>
                     </div>
                 </div>
-                <p class="contact-field__form-note">
-                    *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
-                </p>
+
+
+
                 <button type="submit" class="contact-field__form-button">ВІДПРАВИТИ</button>
                 </form>
         </div>
