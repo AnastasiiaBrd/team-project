@@ -2,7 +2,7 @@
     padding-top: 32px;
     padding-bottom: 52px;
 
-    background-color: #ffffffff;
+    background-color: var(--background-color);
 
 
     &__title {
@@ -12,11 +12,14 @@
         font-size: 24px;
         line-height: 1.25;
 
-        color: #487996;
+        color: var(--accent-color);
     }
 
     &__video {
-        width: auto;
+        display: block;
+        margin: 0 auto;
+
+        width: 280px;
         height: 171px;
         margin-bottom: 16px;
         border-radius: 15px;
@@ -32,7 +35,7 @@
         font-size: 16px;
         line-height: 1.25;
 
-        color: #2B2B2B;
+        color: var(--main-text-color);
 
         &:not(:last-child) {
             margin-bottom: 16px;
@@ -54,7 +57,7 @@
 
 .contact-field {
     padding-bottom: 76px;
-    background-color: #ffffffff;
+    background-color: var(--background-color);
 
     &__container{
         display: flex;
@@ -70,7 +73,7 @@
         font-weight: 700;
         font-size: 18px;
         line-height: 1.27;
-        color: #487996;
+        color: var(--accent-color);
     }
 
     &__link {
@@ -79,7 +82,7 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 1.25;
-        color: #2B2B2B;
+        color: var(--main-text-color);
     }
 
     &__timetable:not(:last-child) {
@@ -102,7 +105,7 @@
         font-weight: normal;
         font-size: 14px;
         line-height: 1.43;
-        color: #2B2B2B;
+        color: var(--main-text-color);
     }
 
     &__form-input {
@@ -113,15 +116,15 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 1.25;
-        color: #2B2B2B;
+        color: var(--main-text-color);
 
         outline: none;
         border: none;
 
-        border-bottom: 1px solid #487996;
+        border-bottom: 1px solid var(--accent-color);
 
         &::placeholder{
-            color: #2B2B2B;
+            color: var(--main-text-color);
         }
     }
 
@@ -133,7 +136,7 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 1.25;
-        color: #2B2B2B;
+        color: var(--main-text-color);
     }
 
     &__form-message {
@@ -144,7 +147,7 @@
         margin-top: 4px;
 
         outline: none;
-        border: 1px solid #487996;
+        border: 1px solid var(--accent-color);
         border-radius: 50px 0px;
 
         &::placeholder {
@@ -179,6 +182,8 @@
         line-height: 1.25;
         color: #CDCDCD;
 
+        max-width: 228px;
+
         margin-bottom: 24px;
     }
 
@@ -199,7 +204,7 @@
         text-align: center;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #487996;
+        color: var(--accent-color);
     }
 
 }
