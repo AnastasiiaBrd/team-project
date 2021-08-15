@@ -2,6 +2,12 @@
 .section-order-form {
   margin-top: 52px;
 }
+
+.order-form {
+  margin: 0 auto;
+  max-width: 420px;
+}
+
 .order-form__title {
   display: block;
   margin-bottom: 28px;
@@ -207,6 +213,8 @@
 }
 
 .button {
+  display: block;
+  margin-left: auto;
   min-width: 280px;
   padding: 16px 83px;
 
@@ -232,6 +240,12 @@
 
 .section-contact {
   margin-top: 52px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-top: 76px;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .caption-take-oder {
@@ -269,6 +283,9 @@
 .contacts-mail,
 .contacts-time {
   margin-top: 24px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .section-contact {
