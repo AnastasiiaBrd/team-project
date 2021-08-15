@@ -3,6 +3,10 @@
 }
 .address__box--tel {
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: right;
+  }
 }
 .footer__item {
   font-family: Cera Pro;
@@ -42,11 +46,22 @@
 }
 .footer-nav {
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: initial;
+    min-width: 210px;
+  }
 }
 .footer-social__box {
   margin-top: 24px;
   margin-bottom: 24px;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    text-align: initial;
+    min-width: 114px;
+  }
 }
 .footer-nav__list {
   list-style: none;
@@ -61,6 +76,10 @@
 .address__box--mail {
   margin-bottom: 24px;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: right;
+  }
 }
 .footer__container {
   padding: 32px 0;
@@ -73,4 +92,18 @@
 }
 .address__link:not(:last-child) {
   margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: flex;
+    align-items: baseline;
+    text-align: inherit;
+    justify-content: space-between;
+    padding: 0 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .address {
+    min-width: 210px;
+  }
 }
