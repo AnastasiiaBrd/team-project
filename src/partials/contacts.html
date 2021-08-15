@@ -4,12 +4,26 @@
     <div  class="contact-about__container">
         <h1 class="contact-about__title">КОНТАКТИ</h1>
         <div class="contact-about__content">
-            <img class="contact-about__preview" src="#" alt="3d робота">
-            <div class="contact-about__description">
-                <P>Людина уперше побачивши процес 3D друку може легко захопитися спостереженням за цим процесом не на десяток хвилин.</P>
-                <p>Наша команда створює timelapse відео що б ви могли краще ознайомитися з технологією 3D друку і просто помилуватися красою цього процесу.</p>
-                <p>Приємного перегляду!</p>
-            </div>
+            <iframe class="contact-about__video"
+            src="https://www.youtube.com/embed/oiEL4BGXQss" 
+            frameborder="0" 
+            >
+            </iframe>
+
+            <!-- <picture class="contact-about__preview">
+                <source media="(min-width: 1440px)" srcset="./images/desktop/contact/contact.jpg 1x, ./images/desktop/contact/contact@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/tablet/contact/contact.jpg 1x, ./images/tablet/contact/contact@2x.jpg 2x">
+                <source media="(min-width: 320px)" srcset="./images/mobile/contact/contact.jpg 1x, ./images/mobile/contact/contact@2x.jpg 2x">
+                <img  
+                src="./images/mobile/contact/contact.jpg" 
+                alt="3d робота">
+            </picture> -->
+
+            <ul class="contact-about__description">
+                <li class="contact-about__description-text">Людина уперше побачивши процес 3D друку може легко захопитися спостереженням за цим процесом не на десяток хвилин.</li>
+                <li class="contact-about__description-text">Наша команда створює timelapse відео що б ви могли краще ознайомитися з технологією 3D друку і просто помилуватися красою цього процесу.</li>
+                <li class="contact-about__description-text emoji">Приємного перегляду!</li>
+            </ul>
         </div>
     </div>
 </section>
@@ -19,25 +33,31 @@
             <li class="contact-field__contact-item">
                 <h2 class="contact-field__contact-title">ТЕЛЕФОНИ</h2>
                 <address>
-                    <a class="contact-field__link" href="tel:+380957384551">+38 (095) -73-84-551</a>
-                    <a class="contact-field__link" href="tel:+380980025235">+38 (098) -00-25-235</a>
+                    <a class="contact-field__link link" href="tel:+380957384551">+38 (095) -73-84-551</a>
+                    <a class="contact-field__link link" href="tel:+380980025235">+38 (098) -00-25-235</a>
                 </address>
             </li>
             <li class="contact-field__contact-item">
                 <h2 class="contact-field__contact-title" lang="en">Email</h2>
                 <address>
-                    <a class="contact-field__link" href="mailto:3dfreedom.info@gmail.com">3dfreedom.info@gmail.com</a>
+                    <a class="contact-field__link link" href="mailto:3dfreedom.info@gmail.com">3dfreedom.info@gmail.com</a>
                 </address>
             </li>
             <li class="contact-field__contact-item">
-                <h2 class="contact-field__contact-title">Робочий час</h2>
-                <p class="contact-field__hours">Пн-пт: з 8:00 до 19:00</p>
-                <p class="contact-field__hours">Сб, Нд: з 10:00 до 17:00</p>
+                <h2 class="contact-field__contact-title">РОБОЧИЙ ЧАС</h2>
+                <div class="contact-field__timetable">
+                    <p class="contact-field__hours">Пн-пт:</p>
+                    <p class="contact-field__hours">з 8:00 до 19:00</p>
+                </div>
+                <div class="contact-field__timetable">
+                    <p class="contact-field__hours">Сб, Нд:</p>
+                    <p class="contact-field__hours">з 10:00 до 17:00</p>
+                </div>
             </li>
         </ul>
         <div class="contact-field__form-container">
             <form action="#" class="contact-field__form">
-                <h2 class="contact-field__form-title">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
+                <h2 class="contact-field__contact-title">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
                 <label class="contact-field__form-field">
                     Ім’я
                     <input
@@ -47,6 +67,7 @@
                         minlength="2"
                         pattern="[a-zA-Zа-яёА-ЯЁ]+"
                         title="Ім'я повинно містити символи кирилиці або латиниці"
+                        placeholder="Олексій"
                         required
                     />
                 </label>
@@ -55,18 +76,29 @@
                         type="email"
                         class="contact-field__form-input"
                         name="user-email"
+                        placeholder="Email"
                         required
                     />
                 </label>
-                <label class="contact-field__form-field">
-                    Повідомлення
-                    <textarea
-                    name="user-message"
-                    class="contact-field__form-message"
-                    placeholder="Залишіть своє повідомлення"
-                    ></textarea>
-                </label>
-                <button type="submit" class="modal-form__button">ВІДПРАВИТИ</button>
+                <div class="contact-field__form-message-container">
+                    <label class="contact-field__form-message-field">
+                        Повідомлення
+                        <textarea
+                        name="user-message"
+                        class="contact-field__form-message"
+                        placeholder="Залишіть своє повідомлення"
+                        ></textarea>
+                    </label>
+                    <div class="contact-field__form-clip">
+                        <svg class="contact-field__form-clip-icon">
+                            <use href="./images/sprite.svg#clip"></use>
+                        </svg>
+                    </div>
+                </div>
+                <p class="contact-field__form-note">
+                    *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+                </p>
+                <button type="submit" class="contact-field__form-button">ВІДПРАВИТИ</button>
                 </form>
         </div>
     </div>
