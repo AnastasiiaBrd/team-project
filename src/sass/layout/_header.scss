@@ -1,8 +1,8 @@
 .header__container {
-  max-width: 320px;
+  outline: 1px solid green;
+  max-width: 768px;
   padding: 22px 20px 0;
   @media screen and (min-width: 768px) {
-    max-width: 768px;
     padding: 20px 60px 0 70px;
   }
   @media screen and (min-width: 1440px) {
@@ -14,14 +14,15 @@
   }
 }
 
-// .header__nav {
-//   //   @media screen and (max-width: 1439px) {
-//   //     display: none;
-//   //   }
-//   display: flex;
-//   align-items: flex-start;
-// }
+.header__nav {
+  @media screen and (max-width: 1439px) {
+    display: none;
+  }
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;
+}
 
-// .header-menu {
-//   display: flex;
-// }
+.header-menu {
+  display: flex;
+}
