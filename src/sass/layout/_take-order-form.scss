@@ -1,6 +1,6 @@
 .photo-puzzle {
   display: none;
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: 1440px) {
     display: block;
   }
 }
@@ -215,3 +215,61 @@
   border-radius: 30.5px;
   border: none;
 }
+// section form--------------
+.section-order-form {
+  margin-top: 52px;
+}
+.order-form__title {
+  display: block;
+  margin-bottom: 28px;
+
+  font-family: Cera Pro;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.28;
+
+  color: var(--accent-color);
+}
+
+.order-form__input {
+  margin-bottom: 44px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.order-form__input--wrap {
+  position: relative;
+}
+
+.order-form__input--wrap input {
+  border: none;
+  display: block;
+  width: 100%;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: capitalize;
+
+  color: var(--main-text-color);
+}
+
+.order-form__input--wrap label {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: capitalize;
+}
+
+.order-form__input--wrap input:focus + .order-form__label {
+  transform: translateY(-100%);
+}
+
+.order-form__input--wrap input:not(:placeholder-shown) + .order-form__label {
+  transform: translateY(-100%);
+}
+// section form--------------
