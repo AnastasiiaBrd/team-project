@@ -19,7 +19,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 1.25;
-    color: var(--headrs-text-color);
+    color: var(--accent-color);
     cursor: pointer;
 
     &:not(:last-child) {
@@ -30,7 +30,7 @@
   .mobile-nav__link {
     text-transform: uppercase;
     &:visited {
-      color: var(--headrs-text-color);
+      color: var(--accent-color);
     }
   }
 }
@@ -38,7 +38,7 @@
 .mobile-submenu {
   padding-top: 24px;
   &__link {
-    color: var(--headrs-text-color);
+    color: var(--accent-color);
   }
 }
 
@@ -46,7 +46,7 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 1.25;
-  color: var(--headrs-text-color);
+  color: var(--accent-color);
   cursor: pointer;
 
   &:not(:last-child) {
@@ -55,6 +55,6 @@
 }
 
 .mobile-nav__current {
-  -webkit-text-stroke: 1px var(--headrs-text-color);
+  -webkit-text-stroke: 1px var(--accent-color);
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
