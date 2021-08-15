@@ -1,4 +1,5 @@
-<section class="section-order-form container">
+<div class="container section-wrap">
+<section class="section-order-form section-wrap--part">
   <h2 class="take-order__subtittle visually-hidden">зворотній зв'язок</h2>
   <form class="order-form" name="order-form">
     <strong class="order-form__title">ЗВ’ЯЖІТЬСЯ З НАМИ </strong>
@@ -100,7 +101,7 @@
   </form>
 </section>
 
-<section class="section-contact container">
+<section class="section-contact section-wrap--part">
   <h2 class="visually-hidden">контакти</h2>
   <div class="contacts-tel">
     <h3 class="contacts-tel__caption caption-take-oder">ТЕЛЕФОНИ</h3>
@@ -131,14 +132,13 @@
   </div>
   <div class="photo-puzzle">
     <picture>
-      <source
-        srcset="
-          ./images/desktop/take-order/puzzle.png    1x,
-          ./images/desktop/take-order/puzzle@2x.png 2x
-        "
-      />
-      <img src="#" alt="сайты для ПК" />
+      <source srcset="
+                ./images/desktop/take-order/puzzle.png 1x,
+                ./images/desktop/take-order/puzzle@2x.png 2x
+              " />
+      <img class="photo-puzzle-img" src="#" alt="3-d макет" />
     </picture>
+  </div>
   </div>
 </section>
 <script src="./js/take-order-select-1.js"></script>
