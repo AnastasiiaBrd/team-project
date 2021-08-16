@@ -1,0 +1,85 @@
+.background {
+  background-image: url('../images/mobile/contact/decor-min.png');
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .background {
+    background-image: url('../images/mobile/contact/decor@2x-min.png');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .background {
+    background-image: url('../images/tablet/contact/decor-min.png');
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .background {
+    background-image: url('../images/tablet/contact/decor@2x-min.png');
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .background {
+    background-image: url('../images/desktop/contact/decor-min.png');
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1440px),
+  (min-resolution: 192dpi) and (min-width: 1440px),
+  (min-resolution: 2dppx) and (min-width: 1440px) {
+  .background {
+    background-image: url('../images/desktop/contact/decor@2x-min.png');
+  }
+}
+
+.background-main {
+  background-image: url('../images/mobile/contact/decor-min.png');
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .background-main {
+    background-image: url('../images/mobile/contact/decor@2x-min.png');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .background-main {
+    background-image: url('../images/tablet/logo-tablet/tablet-decor-min.png');
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .background-main {
+    background-image: url('../images/tablet/logo-tablet/tablet-decor@2x-min.png');
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .background-main {
+    background-image: url('../images/desktop/logo-desktop/desktop-decor-min.png');
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1440px),
+  (min-resolution: 192dpi) and (min-width: 1440px),
+  (min-resolution: 2dppx) and (min-width: 1440px) {
+  .background-main {
+    background-image: url('../images/desktop/logo-desktop/desktop-decor@2x-min.png');
+  }
+}
