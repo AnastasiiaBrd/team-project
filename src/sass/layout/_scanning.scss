@@ -1,12 +1,12 @@
 .conteiner {
   width: 100%;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  // padding-left: 20px;
+  // padding-right: 20px;
 
   @media screen and (min-width: 320px) {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   @media screen and (min-width: 768px) {
     max-width: 768px;
@@ -75,9 +75,12 @@
 }
 
 .scanning {
-  padding-top: 87px;
-  @media screen and (min-width: 320px) {
-    padding-top: 37px;
+  padding-top: 175px;
+  @media screen and (max-width: 320px) {
+    padding-top: 93px;
+  }
+  @media screen and(max-width: 1439px) {
+    padding-top: 105px;
   }
 }
 .section-scanning {
@@ -92,21 +95,21 @@
 
   flex-wrap: wrap;
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
   @media screen and(min-width: 1440px) {
-    height: 342px;
+    background-size: 554px 231.17px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
   }
   @media screen and (max-width: 1399px) {
-    height: 326px;
-    background-size: 246px;
+    background-position: right center;
+    background-size: 203px 180px;
   }
+
   @media screen and(max-width:767px) {
     background-position: bottom;
     height: 677px;
   }
 }
-
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .proccess-images {
     background-image: url('/images/mobile/3d-scanning/Scanning-main@2x-min.jpg');
@@ -200,7 +203,7 @@
 }
 
 .scanning-text {
-  color: var(--headrs-text-color);
+  color: var(--accent-color);
   line-height: 1.285;
   text-align: center;
   letter-spacing: 0.03em;
