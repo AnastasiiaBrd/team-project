@@ -1,19 +1,28 @@
 .conteiner {
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media screen and(min-width: 1440px) {
-  .proccess_list {
-    // display: flex;
-    // flex-wrap: wrap;
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and(min-width: 1440px) {
+    padding: 40px 189px 0;
   }
-  // .process {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // }
+  @media screen and (min-width: 768px) {
+    padding: 20px 60px 0 70px;
+  }
+  @media screen and(max-width:767px) {
+    padding: 22px 20px 0;
+  }
 }
+
+// @media screen and(min-width: 1440px) {
+//   .proccess_list {
+//     // display: flex;
+//     // flex-wrap: wrap;
+//   }
+//   // .process {
+//   //   display: flex;
+//   //   flex-wrap: wrap;
+//   // }
+// }
 
 .proccess_title_jmm {
   font-size: 18px;
@@ -22,7 +31,7 @@
   height: 348px;
 }
 .hero__title {
-  color: var(--headrs-text-color);
+  color: var(--accent-color);
   line-height: 1.25;
   @media screen and(min-width: 1440px) {
     font-size: 48px;
@@ -59,7 +68,7 @@
     font-size: 16px;
 
     font-weight: 300;
-    width: 280px;
+    width: 100%;
   }
 }
 .proccess-list_item:not(:last-child) {
@@ -90,55 +99,68 @@
   padding-top: 24px;
 }
 
-// .proccess-images {
-//   background-image: url('/images/mobile/3d-scanning/Scanning-main-min.jpg');
-//   position: relative;
-//   display: flex;
-//   justify-content: space-between;
-//   flex-wrap: wrap;
-//   background-repeat: no-repeat;
-//   background-position: right;
-// }
+.proccess-images {
+  background-image: url('/images/mobile/3d-scanning/Scanning-main-min.jpg');
 
-// @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-//   .proccess-images {
-//     background-image: url('/images/mobile/3d-scanning/Scanning-main@2x-min.jpg');
-//   }
-// }
+  position: relative;
+  display: flex;
 
-// @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-//   screen and (min-width: 768px) and (min-resolution: 192dpi),
-//   screen and (min-width: 768px) and (min-resolution: 2dppx) {
-//   .proccess-images {
-//     background-image: url('/images/tablet/3d-scanning/scanning_photo1@2x-min.jpg');
-//     // position: absolute;
-// width: 250px;
-// background-size: cover;
-// background-repeat: no-repeat;
-// background-position: center;
-// height: 172px;
-// right: 40px;
-// bottom: 175px;
-//   }
-// }
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  @media screen and(min-width: 1440px) {
+    height: 470px;
+  }
+  @media screen and (max-width: 1399px) {
+    height: 326px;
+    background-size: 246px;
+  }
+  @media screen and(max-width:767px) {
+    background-position: bottom;
+    height: 677px;
+  }
+}
 
-// @media screen and (min-width: 1440px) {
-//   .proccess-images {
-//     background-image: url('/images/desktop/3d-scanning/scanning-main-min.jpg ');
-//     background-size: 1440px;
-//   }
-// }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .proccess-images {
+    background-image: url('/images/mobile/3d-scanning/Scanning-main@2x-min.jpg');
+  }
+}
 
-// @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2),
-//   screen and (min-width: 1440px) and (min-resolution: 192dpi),
-//   screen and (min-width: 1440px) and (min-resolution: 2dppx) {
-//   .proccess-images {
-//     background-image: url('/images/desktop/3d-scanning/scanning-main@2x-min.jpg');
-//   }
-// }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .proccess-images {
+    background-image: url('/images/tablet/3d-scanning/scanning_photo1@2x-min.jpg');
+    // position: absolute;
+    // width: 250px;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // height: 172px;
+    // right: 40px;
+    // bottom: 175px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .proccess-images {
+    background-image: url('/images/desktop/3d-scanning/scanning-main-min.jpg ');
+    // background-size: 1440px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1440px) and (min-resolution: 192dpi),
+  screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .proccess-images {
+    background-image: url('/images/desktop/3d-scanning/scanning-main@2x-min.jpg');
+  }
+}
 
 .scan_title {
-  color: var(--headrs-text-color);
+  color: var(--accent-color);
   line-height: 1.25;
   @media screen and(min-width: 1440px) {
     font-size: 36px;
@@ -177,15 +199,31 @@
   // justify-content: center;
   // align-items: center;
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
+  @media screen and(min-width: 1440px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and(max-width:767px) {
+    flex-wrap: wrap;
+  }
 }
+
 .scanning-list_item:not(:last-child) {
   margin-right: 16px;
 }
 .scanning-list_item {
-  margin-bottom: 17px;
+  @media screen and(min-width: 1440px) {
+    margin-bottom: 100px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 52px;
+  }
+  @media screen and(max-width:767px) {
+    margin-bottom: 55px;
+  }
 }
+
 .scanning-text {
   color: var(--headrs-text-color);
   line-height: 1.285;
@@ -218,17 +256,17 @@
   padding: 16px 32px;
   background: #f5f5fa;
   border-radius: 30.5px;
-  color: var(--headrs-text-color);
+  color: var(--accent-color);
   text-align: center;
   letter-spacing: 0.1em;
   // display: flex;
   margin-left: auto;
   margin-right: auto;
   border: #f5f5fa;
-
-  &:hover {
-    box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
-      5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  @media screen and(min-width:767px) {
+    display: block;
   }
 }
 .scanning-section {
