@@ -41,7 +41,7 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
-    color: #487996;
+    color: var(--accent-color);
     text-transform: uppercase;
 
     margin-bottom: 16px;
@@ -67,7 +67,7 @@
     font-weight: bold;
     font-size: 36px;
     line-height: 1.25;
-    color: #487996;
+    color: var(--accent-color);
     text-transform: uppercase;
 
     margin-bottom: 32px;
@@ -96,7 +96,7 @@
     font-weight: bold;
     font-size: 48px;
     line-height: 1.25;
-    color: #487996;
+    color: var(--accent-color);
     text-transform: uppercase;
 
     margin-bottom: 52px;
