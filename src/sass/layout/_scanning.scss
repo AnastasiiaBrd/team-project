@@ -1,15 +1,36 @@
+// .conteiner {
+//   max-width: 1440px;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   @media screen and(min-width: 1440px) {
+//     padding: 40px 189px 0;
+//   }
+//   @media screen and (min-width: 768px) {
+//     padding: 20px 60px 0 70px;
+//   }
+//   @media screen and(max-width:767px) {
+//     padding: 22px 20px 0;
+//   }
+// }
+
 .conteiner {
-  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  @media screen and(min-width: 1440px) {
-    padding: 40px 189px 0;
+
+  @media screen and (min-width: 320px) {
+    padding-left: 45px;
   }
   @media screen and (min-width: 768px) {
-    padding: 20px 60px 0 70px;
+    max-width: 768px;
+    padding-left: 60px;
+    padding-right: 1px;
   }
-  @media screen and(max-width:767px) {
-    padding: 22px 20px 0;
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    padding-left: 189px;
+    padding-right: 188px;
   }
 }
 
@@ -73,9 +94,9 @@
 }
 .proccess-list_item:not(:last-child) {
   margin-bottom: 16px;
-  @media screen and(min-width: 1440px) {
-    margin-right: 32px;
-  }
+  // @media screen and(min-width: 1440px) {
+  //   margin-right: 32px;
+  // }
 }
 .proccess-list_item:last-child {
   height: 100%;
@@ -94,6 +115,9 @@
 
 .scanning {
   padding-top: 87px;
+  @media screen and (min-width: 320px) {
+    padding-top: 37px;
+  }
 }
 .section-scanning {
   padding-top: 24px;
@@ -110,7 +134,7 @@
   background-position: right;
   background-size: contain;
   @media screen and(min-width: 1440px) {
-    height: 470px;
+    height: 342px;
   }
   @media screen and (max-width: 1399px) {
     height: 326px;
