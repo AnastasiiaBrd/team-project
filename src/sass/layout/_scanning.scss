@@ -1,18 +1,3 @@
-// .conteiner {
-//   max-width: 1440px;
-//   padding-left: 20px;
-//   padding-right: 20px;
-//   @media screen and(min-width: 1440px) {
-//     padding: 40px 189px 0;
-//   }
-//   @media screen and (min-width: 768px) {
-//     padding: 20px 60px 0 70px;
-//   }
-//   @media screen and(max-width:767px) {
-//     padding: 22px 20px 0;
-//   }
-// }
-
 .conteiner {
   width: 100%;
   margin: 0 auto;
@@ -33,17 +18,6 @@
     padding-right: 188px;
   }
 }
-
-// @media screen and(min-width: 1440px) {
-//   .proccess_list {
-//     // display: flex;
-//     // flex-wrap: wrap;
-//   }
-//   // .process {
-//   //   display: flex;
-//   //   flex-wrap: wrap;
-//   // }
-// }
 
 .proccess_title_jmm {
   font-size: 18px;
@@ -94,24 +68,10 @@
 }
 .proccess-list_item:not(:last-child) {
   margin-bottom: 16px;
-  // @media screen and(min-width: 1440px) {
-  //   margin-right: 32px;
-  // }
 }
 .proccess-list_item:last-child {
   height: 100%;
 }
-
-// .proccess-images {
-//   position: absolute;
-//   width: 515px;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   height: 368px;
-//   right: 365px;
-//   bottom: -3px;
-// }
 
 .scanning {
   padding-top: 87px;
@@ -157,14 +117,6 @@
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .proccess-images {
     background-image: url('/images/tablet/3d-scanning/scanning_photo1@2x-min.jpg');
-    // position: absolute;
-    // width: 250px;
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // height: 172px;
-    // right: 40px;
-    // bottom: 175px;
   }
 }
 
@@ -220,8 +172,6 @@
   }
 }
 .scanning_list {
-  // justify-content: center;
-  // align-items: center;
   display: flex;
   width: 100%;
   @media screen and(min-width: 1440px) {
