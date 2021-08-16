@@ -1,0 +1,265 @@
+<<<<<<< Updated upstream
+=======
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.modelling-container {
+    padding-top: 11.35px;
+    padding-bottom: 76px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.modelling-header {
+    color: var(--accent-color);
+    font-weight: 700;
+    line-height: 1.26;
+    font-size: 24px;
+}
+.modelling-content {
+    color: var(--main-text-color);
+    font-weight: 300;
+    line-height: 1.26;
+    font-size: 16px;
+}
+.modelling-description-left {
+    margin-top: 16px;
+    width: 100%;
+}
+.modelling-description-right {
+    margin-top: 16px;
+    width: 100%;
+}
+
+.modelling-ways-header {
+    color: var(--accent-color);
+    font-weight: 700;
+    line-height: 1.26;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 52px;
+}
+.modelling-ways-list {
+    color: var(--main-text-color);
+    font-weight: 300;
+    line-height: 1.26;
+    font-size: 16px;
+    // background-image: url('../images/mobile/3d-modeling/modeling-main@2x-min.png');
+    // background-repeat: no-repeat;
+    // background-position: bottom;
+    // background-size: 280px 164px;
+    // padding-bottom: 196px;
+}
+.modelling-ways__item {
+   margin-left: 17px;
+   margin-top: 16px;
+}
+.modelling-ways__item::before { 
+    content: "";
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 3px 0px;
+    background-color:var(--accent-color);
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    margin-left: -17px;
+    margin-top: 8px;
+    width: 7px;
+    height: 7px;
+   
+}
+
+.modelling-picture-header {
+    color: var(--accent-color);
+    font-weight: 700;
+    line-height: 1.26;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 52px;
+}
+.modelling-pictures-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.modelling-pictures__item {
+    width: 134.62px;
+    height: 117.92px;
+    margin-top: 16px;
+    &:nth-child(odd) {
+        margin-right: 10.77px;
+    }
+}
+.modal-btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    
+    width: 277px;
+    height: 56px;
+    background: #F5F5FA;
+    box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #FFFFFF;
+    border-radius: 30.5px;
+    padding: 16px, 32px, 16px, 32px;
+    color: var(--accent-color);
+    font-weight: 700;
+    line-height: 1.50;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 52px;
+}
+
+@media screen and (min-width: 320px) {
+    .modelling-header {
+        font-size: 24px;
+    }
+ 
+}
+@media screen and (min-width: 768px) {
+    .modelling-container {
+        padding-top: 23.35px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+        .modelling-header {
+        font-size: 36px;
+    }
+    .modelling-description-left {
+        width: 515px;
+    }
+    .modelling-description-right {
+        width: 515px;
+    }
+    .modelling-ways-header {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+    .modelling-ways-list {
+        background-image: url('../images/tablet/3d-modeling/modeling-main@2x-min.png');
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: 246px 144px;
+        padding-bottom: none;
+    }
+
+
+    .modelling-picture-header {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .modelling-pictures-list {
+        display: flex;
+        flex-wrap: unset;
+    }
+    .modelling-pictures__item {
+        width: 152.83px;
+        height: 133.88px;
+        margin-top: 0px;
+        &:not(:last-child) {
+            margin-right: 12.23px;
+        }
+    }
+}
+@media screen and (min-width: 1440px) {
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .modelling-container {
+        padding-top: 24px;
+        padding-bottom: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .modelling-header {
+        font-size: 48px;
+        line-height: 1.25;
+        margin-bottom: 24px;
+    }
+
+    .modelling-content {
+        line-height: 1.28;
+        font-size: 18px;
+        display: flex;
+    }
+    .modelling-description-left {
+        margin-right: 32px;
+        margin-bottom: 39px;
+        width: 515px;
+        margin-top: 0px;
+    }
+    .modelling-description-right {
+        width: 515px;
+        margin-top: 0px;
+    }
+    // .modelling-ways-minor {
+    //     align-items: flex-end;
+    //     background-image: url('../src/images/desktop/3d-modeling/modeling-main-min.png');
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    // }
+    .modelling-ways-header {
+        font-size: 36px;
+        line-height: 1.25;
+        max-width: 624px;
+        margin-top: 61px;
+        // position: absolute;
+    }
+    .modelling-ways-list {
+        font-size: 18px;
+        background-image: none;
+        padding-bottom: none;
+        margin-bottom: none;
+    }
+    .modelling-ways-content {
+        background-image: url('../images/desktop/3d-modeling/modeling-main@2x-min.png');
+        align-items: flex-end;
+        background-size: 515px 301.17px;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    .modelling-ways__picture {
+        width: 515px;
+        height: 300px;
+        }
+      .modelling-ways-content {
+        display: flex;
+      }
+    
+    
+    .modelling-picture-header {
+        font-size: 36px;
+        line-height: 1.25;
+        margin-top: 100px;
+        margin-bottom: 52px;
+        max-width: 842px;
+    }
+    .modelling-pictures-list {
+        display: flex;
+        margin-bottom: 100px;
+    }
+    .modelling-pictures__item {
+        width: 250px;
+        height: 219px;
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    .modal-btn {
+        margin-top: 0px;
+    }
+}
+   
+>>>>>>> Stashed changes
