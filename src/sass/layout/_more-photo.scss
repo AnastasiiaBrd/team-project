@@ -1,0 +1,120 @@
+.section-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 320px) {
+    max-width: 320px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    padding-left: 189px;
+    padding-right: 188px;
+  }
+}
+.more-photos__section {
+  padding-top: 24px;
+  padding-bottom: 76px;
+}
+
+// MOBILE
+@media screen and (max-width: 767px) {
+  .visually-hidden-photo {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+
+  .more-photos__section-header {
+    font-family: Cera Pro;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #487996;
+    text-transform: uppercase;
+
+    margin-bottom: 16px;
+  }
+
+  .more-photos__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .more-photos__point {
+    display: block;
+    margin-bottom: 16px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+// TABLET
+@media screen and (min-width: 768px) {
+  .more-photos__section-header {
+    font-family: Cera Pro;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.25;
+    color: #487996;
+    text-transform: uppercase;
+
+    margin-bottom: 32px;
+  }
+
+  .more-photos__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -19px;
+    margin-right: -19px;
+  }
+
+  .more-photos__point {
+    margin-bottom: 19px;
+    margin-right: 18px;
+  }
+  .more-photos__point:nth-child(n + 10) {
+    margin-bottom: 0;
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: 1440px) {
+  .more-photos__section-header {
+    font-family: Cera Pro;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1.25;
+    color: #487996;
+    text-transform: uppercase;
+
+    margin-bottom: 52px;
+  }
+
+  .more-photos__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -32px;
+    margin-right: -32px;
+  }
+
+  .more-photos__point {
+    margin-bottom: 32px;
+    margin-right: 32px;
+  }
+
+  .more-photos__point:nth-child(n + 10) {
+    margin-bottom: 0;
+  }
+}

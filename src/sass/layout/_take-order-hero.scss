@@ -1,0 +1,142 @@
+.take-order__hero-container {
+  padding-top: 115px;
+  padding-bottom: 100px;
+}
+
+.take-order__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #487996;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    color: #487996;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1.25;
+    color: #487996;
+    margin-bottom: 24px;
+  }
+}
+
+.take-order__box {
+  //   display: flex;
+  width: 100%;
+  height: 100%;
+  //   align-items: center;
+  //   flex-direction: column;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.take-order__hero-pic {
+  width: 280px;
+  height: 171px;
+  background-image: url(../images/mobile/take-order/take-order-main-min.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin-bottom: 16px;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 320px),
+    (min-resolution: 192dpi) and (min-width: 320px),
+    (min-resolution: 2dppx) and (min-width: 320px) {
+    background-image: url(../images/mobile/take-order/take-order-main-min.png);
+    min-width: 280px;
+    height: 171px;
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/take-order/take-order-main-min.png);
+    margin-right: 20px;
+    min-width: 247px;
+    height: 116px;
+    margin-bottom: 0px;
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(../images/tablet/take-order/take-order-main@2x-min.png);
+    argin-right: 20px;
+    min-width: 247px;
+    height: 116px;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 1440px) {
+    background-image: url(../images/desktop/take-order/take-order-main-min.png);
+    margin-right: 32px;
+    min-width: 515px;
+    height: 315px;
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 1440px),
+    (min-resolution: 192dpi) and (min-width: 1440px),
+    (min-resolution: 2dppx) and (min-width: 1440px) {
+    background-image: url(../images/desktop/take-order/take-order-main@2x-min.png);
+    margin-right: 32px;
+    min-width: 515px;
+    height: 315px;
+  }
+}
+
+.take-order__photo-box {
+  display: none;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.take-order__img--first {
+  border-radius: 0 50% 50% 0;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+}
+
+.take-order__img--second {
+  border-radius: 50% 0 50% 0;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+}
+
+.take-order__img--third {
+  border-radius: 0 0 50% 0;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+}
+
+.take-order__list {
+  width: 100%;
+  margin-bottom: 55px;
+  @media screen and (min-width: 768px) {
+    width: 381px;
+    height: 116px;
+  }
+  @media screen and (min-width: 1440px) {
+    min-width: 515px;
+  }
+}
+
+.take-order__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(43, 43, 43, 1);
+  @media screen and (min-width: 1440px) {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.27;
+    color: rgba(43, 43, 43, 1);
+  }
+}
+
+.take-order__list-item:not(:last-child) {
+  margin-bottom: 24px;
+}

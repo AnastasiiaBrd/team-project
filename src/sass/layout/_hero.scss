@@ -1,0 +1,138 @@
+
+.hero-container {
+    width: 280px;
+    margin: 0 auto;
+   
+    @media screen and (min-width: 768px) {
+        width: 420px;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 688px;
+    }
+}
+.hero-title {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 280px;
+
+    font-family: Caviar Dreams;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    color: var(--main-text-color);
+
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 420px;
+        font-size: 24px;
+
+        margin-bottom: 65px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        max-width: 624px;
+        
+        font-size: 48px;
+
+        margin-bottom: 69px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
+
+.hero-list-div {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 65px;
+    }
+    @media screen and (min-width: 1440px) {
+        margin-bottom: 100px;
+    }
+}
+
+.robot {
+    overflow: hidden;
+    border-top-right-radius: 50px;
+}
+
+.lamps {
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+.skull {
+    overflow: hidden;
+    border-radius: 0 40px 0 40px;
+}
+
+.hero-text {
+    font-family: Caviar Dreams;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--main-text-color);
+
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 52px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 1.17;
+    }
+    @media screen and (min-width: 1440px) {
+        font-size: 36px;
+        margin-bottom: 100px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .anchor-link{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .anchor {
+        position: absolute;
+
+        margin-top: 227px;
+        margin-left: 138px;
+    }
+    
+    .anchor-icon {
+        width: 18px;
+        height: 9px;
+        fill: #008CEF;
+    }
+    .html {
+        scroll-behavior: smooth;
+    }
+    
+}
+@media screen and (min-width: 1440px) {
+    .anchor {
+        position: absolute;
+
+        margin-top: 478px;
+        margin-left: 279px;
+    }
+    
+    .anchor-icon {
+        width: 18px;
+        height: 28px;
+        fill: #008CEF;
+    }
+    .html {
+        scroll-behavior: smooth;
+    }
+    
+}

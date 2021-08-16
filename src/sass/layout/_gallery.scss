@@ -1,0 +1,114 @@
+
+
+.gallery-container {
+    margin-bottom: 52px;
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+
+    margin-bottom: 52px;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        margin: 0 auto;
+        margin-bottom: 52px;
+
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 1440px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+
+        padding-left: 189px;
+        padding-right: 189px;
+    }
+}
+
+.gallery-header {
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+    color: var(--accent-color);
+    text-transform: uppercase;
+
+    margin-bottom: 16px;
+
+    text-align: left;
+
+    @media screen and (min-width: 768px) {
+        font-size: 36px;
+
+        margin-bottom: 0;
+    }
+    @media screen and (min-width: 1440px) {
+        font-size: 48px;
+
+        margin-bottom: 52px;
+    }
+}
+
+.gallery-text {
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: var(--accent-color);
+
+    margin-top: 8px;
+
+    text-align: left;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 16px;
+    }
+    @media screen and (min-width: 1440px) {
+        font-size: 18px;
+        line-height: 1.28;
+    }
+}
+
+.gallery-item {
+    width: 280px;
+
+    @media screen and (min-width: 768px) {
+        width: 315px;
+        margin-top: 32px;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 515px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .gallery-item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .gallery-item:nth-child(n + 3) {
+        margin-top: 56px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .gallery-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+}
+
+@media screen and (min-width: 1400px) {
+    .gallery-list {
+        align-content: space-between;
+    }
+}
