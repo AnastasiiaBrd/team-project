@@ -1,6 +1,25 @@
 // section form--------------
-.section-order-form {
+
+.section-wrap {
   margin-top: 52px;
+  padding-bottom: 76px;
+  @media screen and (min-width: 1440px) {
+    margin-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+  }
+}
+
+.section-wrap--part {
+  @media screen and (min-width: 1440px) {
+    flex-basis: calc((100% - 64px) / 2);
+  }
+}
+
+.section-order-form {
+  @media screen and (min-width: 1440px) {
+    margin-right: 32px;
+  }
 }
 
 .order-form {
@@ -15,6 +34,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 1.28;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 36px;
+    line-height: 1.25;
+  }
 
   color: var(--accent-color);
 }
@@ -37,6 +61,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 1.11;
+  }
   text-transform: capitalize;
 
   color: var(--main-text-color);
@@ -50,6 +79,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 1.11;
+  }
   text-transform: capitalize;
 }
 
@@ -94,6 +128,11 @@
   font-size: 16px;
   line-height: 1.25;
 
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
   color: var(--main-text-color);
 }
 
@@ -109,6 +148,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 1.11;
+  }
 
   padding-bottom: 4px;
   border-bottom: 1px solid var(--accent-color);
@@ -163,6 +207,11 @@
   font-size: 16px;
   line-height: 1.25;
 
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
   text-transform: capitalize;
 }
 
@@ -187,6 +236,11 @@
   font-size: 16px;
   line-height: 1.25;
 
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
   color: #cdcdcd;
 }
 
@@ -197,6 +251,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 1.11;
+  }
 
   color: #cdcdcd;
 }
@@ -246,6 +304,11 @@
     justify-content: space-between;
     align-items: baseline;
   }
+  @media screen and (min-width: 1440px) {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 0;
+  }
 }
 
 .caption-take-oder {
@@ -254,12 +317,28 @@
   line-height: 1.28;
 
   color: var(--accent-color);
+
+  @media screen and (min-width: 1440px) {
+    text-align: end;
+
+    font-size: 36px;
+    line-height: 1.25;
+  }
+}
+
+.contacts-mail__link {
+  display: block;
 }
 
 .contacts-tel__item,
-.contacts-mail__item,
-.contacts-time__text {
+.contacts-mail__link,
+.contacts-time__item {
   padding-top: 8px;
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 18px;
+    text-align: end;
+  }
 }
 
 .contacts-tel__link,
@@ -268,6 +347,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 1.11;
+  }
 
   color: var(--main-text-color);
 }
@@ -286,10 +370,9 @@
   @media screen and (min-width: 768px) {
     margin-top: 0;
   }
-}
-
-.section-contact {
-  padding-bottom: 76px;
+  @media screen and (min-width: 1440px) {
+    margin-top: 30px;
+  }
 }
 // section contacts--------------
 
@@ -297,5 +380,7 @@
   display: none;
   @media screen and (min-width: 1440px) {
     display: block;
+    margin-right: -33px;
+    width: 529px;
   }
 }
