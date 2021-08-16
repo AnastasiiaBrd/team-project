@@ -243,6 +243,10 @@
   @media screen and(min-width:767px) {
     display: block;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 .scanning-section {
   padding-bottom: 76px;
