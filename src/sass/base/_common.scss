@@ -58,11 +58,8 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+  padding-left: 0;
   list-style: none;
-}
-
-.link {
-  text-decoration: none;
 }
 
 img {
@@ -81,4 +78,8 @@ li {
 
 a {
   text-decoration: none; /* Убираем подчеркивание */
+}
+
+.link {
+  text-decoration: none;
 }

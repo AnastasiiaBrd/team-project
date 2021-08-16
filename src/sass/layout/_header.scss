@@ -1,16 +1,18 @@
+.link:visited {
+  color: inherit;
+}
+
 .header__container {
-  outline: 1px solid green;
   max-width: 768px;
   padding: 22px 20px 0;
+  margin: 0 auto;
   @media screen and (min-width: 768px) {
     padding: 20px 60px 0 70px;
   }
   @media screen and (min-width: 1440px) {
     display: flex;
     max-width: 1440px;
-    height: auto;
     padding: 40px 80px 0;
-    margin: 0 auto;
   }
 }
 
@@ -21,8 +23,103 @@
   display: flex;
   align-items: flex-start;
   margin: 0 auto;
+  text-align: center;
+}
+
+.header__logo {
+  max-width: 101px;
+  height: auto;
+  @media screen and (min-width: 768px) {
+    max-width: 125px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 192px;
+    margin-right: 150px;
+  }
 }
 
 .header-menu {
+  font-family: Caviar Dreams;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
   display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 54px;
+  }
+}
+
+.lang,
+.select-lang__subtitle {
+  @media screen and (min-width: 1440px) {
+    font-family: Caviar Dreams;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #bdbdbd;
+    margin-left: 50px;
+
+    max-height: 0;
+    opacity: 0;
+    transform: scale(0);
+    border-bottom: 1px solid rgba(72, 121, 150, 0.5);
+
+    order: 1;
+    &.active {
+      max-height: 100%;
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.header-tel {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: 28px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-left: 94px;
+  }
+}
+
+.header-tel__link {
+  display: block;
+  font-family: Cera Pro;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+
+  fill: #008cef;
+
+  &:hover,
+  &:focus {
+    color: #bdbdbd;
+    fill: #bdbdbd;
+  }
+}
+
+.header-tel__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.header-tel__icon {
+  @media screen and (min-width: 768px) {
+    margin-right: 4px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-right: 8px;
+  }
 }

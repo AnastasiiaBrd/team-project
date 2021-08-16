@@ -1,4 +1,9 @@
 .mobile-menu-wrap {
+  width: 100%;
+  height: 67px;
+  @media screen and (min-width: 768px) {
+    height: 70px;
+  }
   @media screen and (min-width: 1440px) {
     display: none;
   }
@@ -54,29 +59,27 @@
   }
 }
 
-// .menu-bg{
-//   position: absolute;
-// }
-
 .mobile-header__wrap {
   display: flex;
   align-items: center;
   margin: 0 auto;
   position: relative;
   height: 45px;
-}
-
-.header__logo {
-  margin-right: 17px;
-  max-width: 101px;
-  height: auto;
+  @media screen and (min-width: 768px) {
+    height: 50px;
+  }
 }
 
 .mobile-menu__btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 11px;
+  width: 45px;
+  height: 45px;
+  @media screen and (min-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
   fill: var(--accent-color);
   background-color: transparent;
   border: none;
@@ -107,6 +110,9 @@
     fill: #bdbdbd;
     outline: 1px dotted var(--accent-color);
   }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .mobile-lang__btn {
@@ -122,6 +128,12 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  @media screen and (min-width: 768px) {
+    background-color: var(--background-color);
+    width: 45px;
+    height: 45px;
+    margin-left: auto;
+  }
 
   &:hover,
   &:focus {
@@ -187,7 +199,9 @@
   height: 7px;
   line-height: 7px;
   color: white;
-
-  margin-right: 12px;
   border-radius: 3px 0px;
+  margin-right: 12px;
+  @media screen and (min-width: 768px) {
+    margin-right: 16px;
+  }
 }
