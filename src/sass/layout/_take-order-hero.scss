@@ -1,5 +1,13 @@
 .take-order__hero-container {
-  padding-top: 115px;
+  padding-top: 93px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 115px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 175px;
+  }
 }
 
 .take-order__title {
