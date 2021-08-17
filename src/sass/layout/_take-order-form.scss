@@ -107,16 +107,21 @@
   padding-bottom: 13px;
   max-height: 0;
   opacity: 0;
-  transform: scale(0);
+  transform: scaleY(0);
+  transform-origin: top;
   border-bottom: 1px solid rgba(72, 121, 150, 0.5);
 
   order: 1;
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .select-box__list.active {
   max-height: 100%;
   opacity: 1;
-  transform: scale(1);
+  transform: scaleY(1);
 }
 
 .select-box__item {
@@ -275,6 +280,7 @@
   margin-left: auto;
   min-width: 280px;
   padding: 16px 83px;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     min-width: 177px;
