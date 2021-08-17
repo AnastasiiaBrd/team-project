@@ -252,6 +252,7 @@
 .file-input label {
   display: block;
   margin-top: 4px;
+  cursor: pointer;
 
   font-weight: 400;
   font-size: 16px;
@@ -273,6 +274,7 @@
   width: 22px;
   height: 20px;
   background-image: url(../images/clip.svg);
+  cursor: pointer;
 }
 
 .button {
