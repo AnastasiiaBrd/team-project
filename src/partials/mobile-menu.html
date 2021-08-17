@@ -1,68 +1,146 @@
-<!-- <div class="mobile-menu-wrap">
-    <div class="header__container">
-        <button class="mobile-menu__btn" type="button" data-menu-open>
-            <svg class="mobile-menu__burger" width="32" height="32">
-                <use href="./images/sprite.svg#burger-menu"></use>
-            </svg>
-        </button>
-        <div class="header__container menu-overlay" data-menu>
-            <div class="menu-bg"></div>
-            <div class="menu-container">
-                <div class="mobile-header__wrap">
-                    <a class="logo header__logo link" href="./index.html">
-                        <picture>
-                            <source
-                                srcset="./images/tablet/logo-tablet/tablet-logo-min.png 1x, ./images/tablet/logo-tablet/tablet-logo@2x-min.png 2x"
-                                media="(min-width: 768px)" />
-                            <source
-                                srcset="./images/mobile/logo-mobile/mobil-logo-min.png 1x, ./images/mobile/logo-mobile/mobil-logo@2x-min.png 2x"
-                                media="(max-width: 320px)" />
-                            <img class="team-cards__img" src="./images/mobile/logo-mobile/mobil-logo-min.png"
-                                alt="Логотип компанії 3Д-Фрідом" />
-                        </picture>
-                    </a>
+<div class="top-section">
+    <div class="header__container ">
 
-                    <button class="mobile-menu__btn" type="button" data-menu-close>
-                        <svg class="mobile-menu__close" width="23" height="23">
-                            <use href="./images/sprite.svg#menu-modal-close"></use>
-                        </svg>
-                    </button>
+        <div class="mobile-menu-wrap">
+            <div class="mobile-header__wrap">
+                <a class="logo header__logo link" href="./index.html">
+                    <picture>
+                        <source
+                            srcset="./images/tablet/logo-tablet/tablet-logo-min.png 1x, ./images/tablet/logo-tablet/tablet-logo@2x-min.png 2x"
+                            media="(min-width: 768px)" />
+                        <source
+                            srcset="./images/mobile/logo-mobile/mobil-logo-min.png 1x, ./images/mobile/logo-mobile/mobil-logo@2x-min.png 2x"
+                            media="(max-width: 320px)" />
+                        <img class="team-cards__img" src="./images/mobile/logo-mobile/mobil-logo-min.png"
+                            alt="Логотип компанії 3Д-Фрідом" />
+                    </picture>
+                </a>
 
-                    <button class="mobile-tel__btn" type="button" data-tel-open>
-                        <svg class="header-tel__icon" width="24" height="24">
-                            <use href="./images/sprite.svg#mobil-phone"></use>
-                        </svg>
-                    </button>
-                    <button class="mobile-lang__btn" type="button" data-lang-open>ENG</button>
-                </div>
+                <button class="mobile-menu__btn burger" type="button" data-menu-open>
+                    <svg class="mobile-menu__burger" width="32" height="32">
+                        <use href="./images/sprite.svg#burger-menu"></use>
+                    </svg>
+                </button>
+
+                <button class="mobile-tel__btn" type="button" data-tel-open>
+                    <svg class="header-tel__icon" width="24" height="24">
+                        <use href="./images/sprite.svg#mobil-phone"></use>
+                    </svg>
+                </button>
+
+                <label for="lang-change"></label>
+                <select id="lang-change" class="mobile-lang__btn" name="lang-change">
+                    <option class="mobile-lang__option" value="ENG" selected>ENG</option>
+                    <option class="mobile-lang__option" value="UKR">UKR</option>
+                    <option class="mobile-lang__option" value="RU">RU</option>
+                </select>
+
+                <!-- <button class="mobile-lang__btn" type="button">ENG</button> -->
+
+                <ul class="header-tel  tel-open list" data-tel>
+                    <svg class="header-tel__polygon" width="38" height="26">
+                        <use href="./images/sprite.svg#polygon-form"></use>
+                    </svg>
+                    <li class="header-tel__item"><a data-tel-close class="header-tel__link link"
+                            href="tel:+380936432288">
+                            <svg class="header-tel__icon" width="14" height="14">
+                                <use href="./images/sprite.svg#mobil-phone"></use>
+                            </svg>+38 (093) 643 22 88</a>
+                    </li>
+                    <li class="header-tel__item"><a class="header-tel__link link" href="tel:+380503454423">
+                            <svg class="header-tel__icon" width="14" height="14">
+                                <use href="./images/sprite.svg#mobil-phone"></use>
+                            </svg>+38 (050) 345 44 23</a>
+                    </li>
+                </ul>
+
             </div>
 
-            <ul class="mobile-nav list">
-                <li class="mobile-nav__item "><a class="mobile-nav__link menu-link-action link"
-                        href="./index.html">ГОЛОВНА</a></li>
-                <li class="mobile-nav__item">ПОСЛУГИ
-                    <ul class="mobile-submenu list">
-                        <li class="mobile-submenu__item">
-                            <a class="mobile-submenu__link menu-link-action link" href="./modeling.html">3D
-                                Моделювання</a>
-                        </li>
-                        <li class="mobile-submenu__item mobile-nav__current">
-                            <a class="mobile-submenu__link menu-link-action link" href="./scanning.html">3D
-                                Сканування</a>
-                        </li>
-                        <li class="mobile-submenu__item">
-                            <a class="mobile-submenu__link menu-link-action link" href="./printing.html">3D Друк</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="mobile-nav__item">
-                    <a class="mobile-nav__link menu-link-action link" href="./take-order.html">ЗАМОВИТИ</a>
-                </li>
-                <li class="mobile-nav__item">
-                    <a class="mobile-nav__link menu-link-action link" href="./contacts.html">КОНТАКТИ</a>
-                </li>
-            </ul>
+            <div class="top-section menu-overlay" data-menu>
+                <div class="menu-container header__container">
+                    <div class="mobile-header__wrap">
+                        <a class="logo header__logo link" href="./index.html">
+                            <picture>
+                                <source
+                                    srcset="./images/tablet/logo-tablet/tablet-logo-min.png 1x, ./images/tablet/logo-tablet/tablet-logo@2x-min.png 2x"
+                                    media="(min-width: 768px)" />
+                                <source
+                                    srcset="./images/mobile/logo-mobile/mobil-logo-min.png 1x, ./images/mobile/logo-mobile/mobil-logo@2x-min.png 2x"
+                                    media="(max-width: 320px)" />
+                                <img class="team-cards__img" src="./images/mobile/logo-mobile/mobil-logo-min.png"
+                                    alt="Логотип компанії 3Д-Фрідом" />
+                            </picture>
+                        </a>
 
+                        <button class="mobile-menu__btn" type="button" data-menu-close>
+                            <svg class="mobile-menu__close" width="23" height="23">
+                                <use href="./images/sprite.svg#menu-modal-close"></use>
+                            </svg>
+                        </button>
+
+                        <button class="mobile-tel__btn" type="button" data-tel-open>
+                            <svg class="header-tel__icon" width="24" height="24">
+                                <use href="./images/sprite.svg#mobil-phone"></use>
+                            </svg>
+                        </button>
+
+                        <label for="lang-change"></label>
+                        <select id="lang-change" class="mobile-lang__btn" name="lang-change">
+                            <option class="mobile-lang__option" value="ENG" selected>ENG</option>
+                            <option class="mobile-lang__option" value="UKR">UKR</option>
+                            <option class="mobile-lang__option" value="RU">RU</option>
+                        </select>
+
+                        <!-- <button class="mobile-lang__btn" type="button">ENG</button> -->
+
+                        <ul class="header-tel list">
+                            <svg class="header-tel__polygon" width="38" height="26">
+                                <use href="./images/sprite.svg#polygon-form"></use>
+                            </svg>
+                            <li class="header-tel__item"><a class="header-tel__link link" href="tel:+380936432288">
+                                    <svg class="header-tel__icon" width="14" height="14">
+                                        <use href="./images/sprite.svg#mobil-phone"></use>
+                                    </svg>+38 (093) 643 22 88</a>
+                            </li>
+                            <li class="header-tel__item"><a class="header-tel__link link" href="tel:+380503454423">
+                                    <svg class="header-tel__icon" width="14" height="14">
+                                        <use href="./images/sprite.svg#mobil-phone"></use>
+                                    </svg>+38 (050) 345 44 23</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="mobile-nav list">
+                    <li class="mobile-nav__item "><a class="mobile-nav__link menu-link-action link"
+                            href="./index.html">ГОЛОВНА</a>
+                    </li>
+                    <li class="mobile-nav__item">ПОСЛУГИ
+                        <ul class="mobile-submenu list">
+                            <li class="mobile-submenu__item">
+                                <a class="mobile-submenu__link menu-link-action link" href="./modeling.html">3D
+                                    Моделювання</a>
+                            </li>
+                            <li class="mobile-submenu__item mobile-nav__current">
+                                <a class="mobile-submenu__link menu-link-action link" href="./scanning.html">3D
+                                    Сканування</a>
+                            </li>
+                            <li class="mobile-submenu__item">
+                                <a class="mobile-submenu__link menu-link-action link" href="./printing.html">3D Друк</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link menu-link-action link" href="./take-order.html">ЗАМОВИТИ</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link menu-link-action link" href="./contacts.html">КОНТАКТИ</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div> -->
+</div>
+<script src="./js/header-submenu.js"></script>
+<script src="./js/lang.js"></script>
+<!-- <script src="./js/header-tel.js"></script> -->
