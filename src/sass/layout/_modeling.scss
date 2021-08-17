@@ -1,8 +1,6 @@
 .modelling-container {
-  padding-top: 11.35px;
   padding-bottom: 76px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 93px;
 }
 .modelling-header {
   color: var(--accent-color);
@@ -38,11 +36,6 @@
   font-weight: 300;
   line-height: 1.26;
   font-size: 16px;
-  // background-image: url('../images/mobile/3d-modeling/modeling-main@2x-min.png');
-  // background-repeat: no-repeat;
-  // background-position: bottom;
-  // background-size: 280px 164px;
-  // padding-bottom: 196px;
 }
 .modelling-ways__item {
   margin-left: 17px;
@@ -118,12 +111,17 @@
   .modelling-header {
     font-size: 24px;
   }
+  .modelling-ways-list {
+    background-image: url('../images/mobile/3d-modeling/modeling-main@2x-min.png');
+    background-repeat: no-repeat;
+    background-size: 280px 164px;
+    background-position: bottom;
+    padding-bottom: 196px;
+}
 }
 @media screen and (min-width: 768px) {
   .modelling-container {
-    padding-top: 23.35px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 105px;
   }
   .modelling-header {
     font-size: 36px;
@@ -143,7 +141,7 @@
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 246px 144px;
-    padding-bottom: none;
+    padding-bottom: 0;
   }
 
   .modelling-picture-header {
@@ -165,10 +163,8 @@
 }
 @media screen and (min-width: 1440px) {
   .modelling-container {
-    padding-top: 24px;
+    padding-top: 175px;
     padding-bottom: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
   .modelling-header {
     font-size: 48px;
@@ -208,8 +204,7 @@
   .modelling-ways-list {
     font-size: 18px;
     background-image: none;
-    padding-bottom: none;
-    margin-bottom: none;
+    padding-bottom: 0;
   }
   .modelling-ways-content {
     background-image: url('../images/desktop/3d-modeling/modeling-main@2x-min.png');
