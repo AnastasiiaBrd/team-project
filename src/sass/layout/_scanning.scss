@@ -31,7 +31,7 @@
   line-height: 1.25;
   @media screen and(min-width: 1440px) {
     font-size: 48px;
-
+    line-height: 1.27;
     margin-bottom: 24px;
   }
   @media screen and(max-width: 1439px) {
@@ -46,6 +46,7 @@
 
 .proccess_title {
   line-height: 1.25;
+  color: var(--main-text-color);
   @media screen and(min-width: 1440px) {
     font-size: 18px;
 
@@ -67,13 +68,24 @@
     width: 100%;
   }
 }
-.proccess-list_item:not(:last-child) {
-  margin-bottom: 16px;
-}
-.proccess-list_item:last-child {
-  height: 100%;
+@media screen and (min-width: 1440px) {
+  .proccess-list_item {
+    height: 138px;
+  }
 }
 
+.proccess-list_item:not(:last-child) {
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 1440px) {
+    margin-right: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .proccess-list_item:last-child {
+    height: 100%;
+  }
+}
 .scanning {
   padding-top: 175px;
   @media screen and (max-width: 320px) {
@@ -85,29 +97,44 @@
 }
 .section-scanning {
   padding-top: 24px;
-}
 
+  @media screen and (min-width: 768px) {
+    padding-top: 52px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .proccess_list {
+    height: 400px;
+    padding-bottom: 76px;
+  }
+}
 .proccess-images {
   background-image: url('/images/mobile/3d-scanning/Scanning-main-min.jpg');
 
   position: relative;
   display: flex;
-
+  flex-direction: column;
   flex-wrap: wrap;
   background-repeat: no-repeat;
-  @media screen and(min-width: 1440px) {
-    background-size: 554px 231.17px;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-  }
-  @media screen and (max-width: 1399px) {
-    background-position: right center;
-    background-size: 203px 180px;
-  }
 
   @media screen and(max-width:767px) {
     background-position: bottom;
-    height: 677px;
+    background-size: 280px 199px;
+    height: 735px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: inherit;
+    background-position: 100%;
+    background-size: 203px 180px;
+  }
+  @media screen and(min-width: 1440px) {
+    flex-direction: column;
+    background-size: 515px 368px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
   }
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -154,6 +181,7 @@
   @media screen and(max-width:767px) {
     font-size: 18px;
     margin-bottom: 16px;
+    text-align: center;
   }
 }
 .thumb {
@@ -184,11 +212,16 @@
   }
   @media screen and(max-width:767px) {
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
 .scanning-list_item:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 0;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 16px;
+  }
 }
 .scanning-list_item {
   @media screen and(min-width: 1440px) {
@@ -230,6 +263,8 @@
   padding-top: 15px;
 }
 .scanning-button {
+  width: 280px;
+  height: 56px;
   align-items: center;
   padding: 16px 32px;
   background: #f5f5fa;
@@ -243,9 +278,7 @@
   border: #f5f5fa;
   box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
     5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
-  @media screen and(min-width:767px) {
-    display: block;
-  }
+  display: block;
 
   &:hover {
     cursor: pointer;
