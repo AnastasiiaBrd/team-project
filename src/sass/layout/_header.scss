@@ -1,18 +1,32 @@
+.top-section {
+  position: absolute;
+  width: 100%;
+  padding-top: 22px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 40px;
+  }
+}
+
 .link:visited {
   color: inherit;
 }
 
 .header__container {
-  max-width: 768px;
-  padding: 22px 20px 0;
+  min-width: 320px;
+  padding: 0 20px;
   margin: 0 auto;
   @media screen and (min-width: 768px) {
-    padding: 20px 60px 0 70px;
+    padding-left: 60px;
+    padding-right: 55px;
+    max-width: 768px;
   }
   @media screen and (min-width: 1440px) {
-    display: flex;
     max-width: 1440px;
-    padding: 40px 80px 0;
+    padding: 0 80px;
   }
 }
 
@@ -21,9 +35,11 @@
     display: none;
   }
   display: flex;
-  align-items: flex-start;
+  width: 100%;
+  justify-content: space-between;
+  // align-items: flex-start;
+
   margin: 0 auto;
-  text-align: center;
 }
 
 .header__logo {
@@ -34,8 +50,12 @@
   }
   @media screen and (min-width: 1440px) {
     max-width: 192px;
-    margin-right: 150px;
+    margin-right: auto;
   }
+}
+
+.header-menu-wrap {
+  display: flex;
 }
 
 .header-menu {
@@ -47,10 +67,31 @@
   letter-spacing: 0.01em;
   color: var(--main-text-color);
   display: flex;
+  margin-right: 50px;
 
   &__item:not(:last-child) {
-    margin-right: 54px;
+    margin-right: 44px;
   }
+}
+
+.selected31.select-lang.select-form__subtitle,
+.lang__link {
+  font-family: Caviar Dreams;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #bdbdbd;
+  border-bottom: none;
+  &::after {
+    content: '';
+    right: -14px;
+  }
+}
+
+.selected32.select-form__subtitle,
+.options-container31.select-box__list.active {
+  border-bottom: none;
 }
 
 .lang,
@@ -62,14 +103,12 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: #bdbdbd;
-    margin-left: 50px;
 
     max-height: 0;
     opacity: 0;
     transform: scale(0);
-    border-bottom: 1px solid rgba(72, 121, 150, 0.5);
-
     order: 1;
+
     &.active {
       max-height: 100%;
       opacity: 1;
@@ -78,20 +117,16 @@
   }
 }
 
-.hidden {
-  display: none;
-}
-
-.header-tel {
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: block;
-    margin-left: 28px;
-  }
-  @media screen and (min-width: 1440px) {
-    margin-left: 94px;
-  }
-}
+// .header-tel {
+//   display: none;
+//   @media screen and (min-width: 768px) {
+//     display: block;
+//     margin-left: 28px;
+//   }
+//   @media screen and (min-width: 1440px) {
+//     margin-left: 94px;
+//   }
+// }
 
 .header-tel__link {
   display: block;
