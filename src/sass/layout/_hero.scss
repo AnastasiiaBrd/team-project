@@ -2,12 +2,15 @@
 .hero-container {
     width: 280px;
     margin: 0 auto;
+    padding-top: 93px;
    
     @media screen and (min-width: 768px) {
         width: 420px;
+        padding-top: 105px;
     }
     @media screen and (min-width: 1440px) {
         width: 688px;
+        padding-top: 163px;
     }
 }
 .hero-title {
@@ -60,16 +63,22 @@
 .robot {
     overflow: hidden;
     border-top-right-radius: 50px;
+
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
 }
 
 .lamps {
     overflow: hidden;
     border-radius: 100px;
+
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
 }
 
 .skull {
     overflow: hidden;
     border-radius: 0 40px 0 40px;
+
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
 }
 
 .hero-text {
@@ -104,7 +113,7 @@
     .anchor {
         position: absolute;
 
-        margin-top: 227px;
+        margin-top: 332px;
         margin-left: 138px;
     }
     
@@ -122,8 +131,8 @@
     .anchor {
         position: absolute;
 
-        margin-top: 478px;
-        margin-left: 279px;
+        margin-top: 641px;
+        margin-left: 239px;
     }
     
     .anchor-icon {
