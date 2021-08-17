@@ -1,24 +1,4 @@
-.conteiner {
-  width: 100%;
-  margin: 0 auto;
-  // padding-left: 20px;
-  // padding-right: 20px;
-
-  @media screen and (min-width: 320px) {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-    padding-left: 60px;
-    padding-right: 1px;
-  }
-  @media screen and (min-width: 1440px) {
-    max-width: 1440px;
-    padding-left: 189px;
-    padding-right: 188px;
-  }
-}
+// }
 
 .proccess_title_jmm {
   font-size: 18px;
@@ -128,7 +108,7 @@
   @media screen and (min-width: 768px) {
     flex-direction: inherit;
     background-position: 100%;
-    background-size: 203px 180px;
+    background-size: 164px 181px;
   }
   @media screen and(min-width: 1440px) {
     flex-direction: column;
@@ -181,7 +161,7 @@
   @media screen and(max-width:767px) {
     font-size: 18px;
     margin-bottom: 16px;
-    text-align: center;
+    // text-align: center;
   }
 }
 .thumb {
