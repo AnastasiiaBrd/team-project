@@ -5,16 +5,16 @@
   padding-right: 20px;
 
   @media screen and (min-width: 320px) {
-    max-width: 320px;
+    max-width: 480px;
   }
   @media screen and (min-width: 768px) {
-    max-width: 768px;
-    padding-left: 60px;
-    padding-right: 60px;
+    max-width: 688px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   @media screen and (min-width: 1440px) {
-    max-width: 1440px;
-    padding-left: 189px;
-    padding-right: 188px;
+    max-width: 1103px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
