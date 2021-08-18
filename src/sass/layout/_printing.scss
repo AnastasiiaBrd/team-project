@@ -100,6 +100,18 @@
   }
 }
 
+.create-list__picture:not(:last-child) {
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 25px;
+  }
+}
+
 .create-item_text {
   display: flex;
   text-align: center;
@@ -112,10 +124,6 @@
     font-size: 18px;
     line-height: 1.27;
   }
-}
-
-.create-item_text:not(:last-child) {
-  margin-top: 38px;
 }
 
 // SECOND UL
