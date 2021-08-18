@@ -8,22 +8,11 @@
 
 .gallery-container {
     display: block;
-    width: 320px;
-    margin: 0 auto;
-
-    padding-left: 20px;
-    padding-right: 20px;
-
+  
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        
-        width: 688px;
-        margin: 0 auto;
-    }
-    @media screen and (min-width: 1440px) {
-        width: 1103px;
-        margin: 0 auto;
+    
     }
 }
 
