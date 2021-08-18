@@ -170,7 +170,8 @@
     margin-left: auto;
   }
 
-  .mobile-lang__option {
+  .mobile-lang__option,
+  .lang__item {
     display: block;
     font-family: Caviar Dreams;
     font-weight: 700;
@@ -255,4 +256,19 @@
   @media screen and (min-width: 768px) {
     margin-right: 16px;
   }
+}
+
+.selected32.select-form__subtitle::after {
+  content: '';
+  display: block;
+  background-image: url('../images/polygon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 10px;
+  height: 4px;
+  right: 8px;
+  bottom: 11px;
+  fill: #008cef;
+  transform: rotate(180deg), translateY(5px);
 }
