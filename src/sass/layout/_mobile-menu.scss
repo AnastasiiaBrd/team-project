@@ -13,7 +13,6 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  // transform: translateX(100%);
 
   &.is-open {
     position: fixed;
@@ -30,10 +29,9 @@
     visibility: visible;
     pointer-events: auto;
 
-    // transform: translateX(0);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 1px 3px rgba(0, 0, 0, 0.16);
-    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1);
 
     background-image: url('../images/mobile/contact/decor-min.png');
 
@@ -256,19 +254,4 @@
   @media screen and (min-width: 768px) {
     margin-right: 16px;
   }
-}
-
-.selected32.select-form__subtitle::after {
-  content: '';
-  display: block;
-  background-image: url('../images/polygon.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 10px;
-  height: 4px;
-  right: 8px;
-  bottom: 11px;
-  fill: #008cef;
-  transform: rotate(180deg), translateY(5px);
 }
