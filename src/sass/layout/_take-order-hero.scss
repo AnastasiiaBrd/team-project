@@ -119,12 +119,13 @@
 
 .take-order__list {
   width: 100%;
-  margin-bottom: 55px;
+
   @media screen and (min-width: 768px) {
     width: 381px;
     height: 116px;
   }
   @media screen and (min-width: 1440px) {
+    margin-bottom: 55px;
     min-width: 515px;
   }
 }
