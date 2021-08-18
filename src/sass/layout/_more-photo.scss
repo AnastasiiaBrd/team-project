@@ -1,9 +1,10 @@
-.more-photos__section {
-  padding-bottom: 76px;
-}
-
 // MOBILE
 @media screen and (max-width: 767px) {
+  .more-photos__section {
+    padding-bottom: 153px;
+    margin-bottom: -16px;
+  }
+
   .visually-hidden-photo {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -33,14 +34,18 @@
 
   .more-photos__point {
     display: block;
-    margin-bottom: 16px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 16px;
   }
 }
 
 // TABLET
 @media screen and (min-width: 768px) {
+  .more-photos__section {
+    padding-bottom: 129px;
+    margin-bottom: -19px;
+  }
   .more-photos__section-header {
     font-family: Cera Pro;
     font-weight: bold;
@@ -70,6 +75,11 @@
 
 // DESKTOP
 @media screen and (min-width: 1440px) {
+  .more-photos__section {
+    padding-bottom: 201px;
+    margin-bottom: -32px;
+  }
+
   .more-photos__section-header {
     font-family: Cera Pro;
     font-weight: bold;
