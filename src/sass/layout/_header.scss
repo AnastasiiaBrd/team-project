@@ -13,6 +13,7 @@
   }
 }
 
+.link,
 .link:visited {
   color: inherit;
 }
@@ -64,12 +65,12 @@
   font-family: Caviar Dreams;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.17;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.01em;
   color: var(--main-text-color);
   display: flex;
-  margin-right: 50px;
+  margin-left: auto;
 
   &__item:not(:last-child) {
     margin-right: 44px;
@@ -80,7 +81,7 @@
   font-family: Caviar Dreams;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--main-text-color);
 }
@@ -122,6 +123,7 @@
 .lang,
 .select-lang {
   @media screen and (min-width: 1440px) {
+    margin-left: 109px;
     font-family: Caviar Dreams;
     font-weight: 700;
     font-size: 14px;
