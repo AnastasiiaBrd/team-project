@@ -1,16 +1,25 @@
 
+.hero-section {
+    padding-top: 93px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 105px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        padding-top: 163px;
+    }
+}
+
 .hero-container {
     width: 280px;
     margin: 0 auto;
-    padding-top: 93px;
    
     @media screen and (min-width: 768px) {
-        width: 420px;
-        padding-top: 105px;
+        width: 380px;
     }
     @media screen and (min-width: 1440px) {
         width: 688px;
-        padding-top: 163px;
     }
 }
 .hero-title {
@@ -113,8 +122,8 @@
     .anchor {
         position: absolute;
 
-        margin-top: 332px;
-        margin-left: 138px;
+        margin-top: 228px;
+        margin-left: 135px;
     }
     
     .anchor-icon {
@@ -131,7 +140,7 @@
     .anchor {
         position: absolute;
 
-        margin-top: 641px;
+        margin-top: 478px;
         margin-left: 239px;
     }
     

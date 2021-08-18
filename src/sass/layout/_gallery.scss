@@ -1,29 +1,29 @@
+.gallery-section {
+    padding-bottom: 52px;
 
+    @media screen and (min-width: 1440px) {
+        padding-bottom: 100px;
+    }
+}
 
 .gallery-container {
-    margin-bottom: 52px;
+    display: block;
     width: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
     margin: 0 auto;
 
-    margin-bottom: 52px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     @media screen and (min-width: 768px) {
-        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        
+        width: 688px;
         margin: 0 auto;
-        margin-bottom: 52px;
-
-        padding-left: 60px;
-        padding-right: 60px;
     }
     @media screen and (min-width: 1440px) {
-        width: 1440px;
+        width: 1103px;
         margin: 0 auto;
-        margin-bottom: 100px;
-
-        padding-left: 189px;
-        padding-right: 189px;
     }
 }
 
